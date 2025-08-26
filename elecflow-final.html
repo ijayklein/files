@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="en"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated California Residential Electrical Design &amp; Permit Workflow (2025+)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .workflow-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .step {
+            background-color: #fff;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .step h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+        .step-section {
+            margin-bottom: 10px;
+        }
+        .step-section h3 {
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .step-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .arrow {
+            text-align: center;
+            font-size: 24px;
+            color: #007bff;
+            margin: -10px 0;
+        }
+        .tooltip {
+            cursor: help;
+            text-decoration: underline dotted #007bff;
+            position: relative;
+        }
+        .tooltip:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            white-space: nowrap;
+            z-index: 10;
+            font-size: 0.9em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .step {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .tooltip:hover::after {
+                white-space: normal;
+                width: 200px;
+            }
+        }
+    </style>
+<script src="https://puc.poecdn.net/authenticated_preview_page/syncedState.bd4eeeb8e8e02052ee92.js"></script></head>
+<body>
+    <h1>Updated California Residential Electrical Design &amp; Permit Workflow (2025+)</h1>
+    <div class="workflow-container">
+        <div class="step">
+            <h2>Step 1: Service Entrance &amp; Utility Demarcation</h2>
+            <div class="step-section">
+                <h3>Purpose</h3>
+                <p>Establish the core of the residential electrical system by defining the utility connection point, ensuring safe power entry, emergency access for first responders, surge protection, and proper grounding. This step enhances safety (e.g., quick shutoff during fires), protects equipment from transients, and sets the foundation for load calculations and multi-source integration. It explicitly addresses panel location, functional dimensions/clearances, and criteria for additional panels/subpanels.</p>
+            </div>
+            <div class="step-section">
+                <h3>Key Activities</h3>
+                <ul>
+                    <li>Place the main service disconnect in an accessible exterior location and label it appropriately (e.g., nearest point of entry; prohibited in bathrooms/closets).</li>
+                    <li>Coordinate with the utility for the demarcation point (e.g., meter) and ensure single service drop unless exceptions apply.</li>
+                    <li>Install surge protection at the service entrance.</li>
+                    <li>Set up grounding and bonding systems.</li>
+                    <li>Size the service panel based on <span class="tooltip" data-tooltip="Calculations per CEC 220, including lighting at 3 VA/ft², appliances, and 125% for continuous loads; may require upsizing or subpanels for high demands.">load calculations</span>, including directories for circuits and power sources; evaluate need for additional panels/<span class="tooltip" data-tooltip="Subpanels are secondary distribution panels with isolated neutrals; used for capacity expansion or remote areas (e.g., per CEC 230.71).">subpanels</span> (e.g., for larger/multi-floor homes, high PV/EV/ESS loads).</li>
+                    <li>Perform load calculations and consider demand management for high loads (e.g., EVs).</li>
+                </ul>
+            </div>
+            <div class="step-section">
+                <h3>Related Codes and References</h3>
+                <ul>
+                    <li><span class="tooltip" data-tooltip="Mandates outdoor emergency disconnect for dwellings to aid firefighters; label as 'EMERGENCY DISCONNECT, SERVICE DISCONNECT'.">CEC 230.85</span> (emergency disconnect location and labeling, adopted from NEC 2020).</li>
+                    <li><span class="tooltip" data-tooltip="Covers service entrance conductors and utility coordination (e.g., CPUC Rule 21).">CEC Article 230</span> (service entrance conductors, utility rules like CPUC Rule 21).</li>
+                    <li><span class="tooltip" data-tooltip="Allows up to 6 grouped disconnects; prefers single main breaker for dwellings.">CEC 230.71</span> (grouping of disconnects, up to 6 switches).</li>
+                    <li><span class="tooltip" data-tooltip="Requires accessible location nearest entry; clearances: 36&quot; depth, 30&quot; width, 6'-6&quot; height for safe access.">CEC 230.70(A)(1), 110.26(A)</span> (panel location and clearances: 36" depth, 30" width, 6'-6" height; nearest point of entry; mounting height ≤6'-7" per CEC 240.24; prohibited locations like bathrooms/closets per CEC 240.24(E)/(F)).</li>
+                    <li><span class="tooltip" data-tooltip="Requires Type 1/2 SPD at services for dwellings to protect against transients (e.g., lightning).">CEC 230.67</span> (surge protective devices: Type 1/2 SPD, UL 1449 listed, ≥10 kA rating).</li>
+                    <li><span class="tooltip" data-tooltip="Ensures proper grounding electrodes (e.g., rods, Ufer) and bonding for fault paths.">CEC Article 250</span> (grounding electrode system, bonding: e.g., Table 250.66 for jumper size; 250.94 for intersystem bonding).</li>
+                    <li><span class="tooltip" data-tooltip="Equipment must be listed with adequate short-circuit rating; NEMA 3R for outdoor.">CEC 230.82, 230.87</span> (service equipment rating and short-circuit current; NEMA 3R for outdoor).</li>
+                    <li><span class="tooltip" data-tooltip="Requires circuit directories and plaques denoting subpanels or multiple sources.">CEC 408.4(A)</span> (circuit directories); CEC 705.10, 706.11(A) (plaques for multiple power sources and subpanel locations).</li>
+                    <li><span class="tooltip" data-tooltip="Load calcs determine service size; add subpanels if exceeded (e.g., for large homes or EVs).">CEC 220</span> (load calculations: e.g., 3 VA/ft² lighting, 125% for continuous loads; 220.87 for demand management; upsize service or add subpanels if loads exceed capacity, e.g., for larger homes (&gt;2,000 ft² or multi-floor), multiple EVs, or PV backfeed limits).</li>
+                    <li>Rationale: Eliminates meter-pulling in fires; protects against surges; ensures single-point grounding; prevents overloads in high-load scenarios (e.g., add subpanels for remote floors or ESS critical loads).</li>
+                </ul>
+            </div>
+            <div class="step-section">
+                <h3>Outputs/Deliverables</h3>
+                <ul>
+                    <li>Labeled main disconnect and panel schedule, including notes on location, clearances, and any subpanels.</li>
+                    <li>Load calculation worksheet evaluating need for additional panels (e.g., due to house size/PV/EV).</li>
+                    <li>Grounding electrode notes on plans.</li>
+                    <li>Plaque for multiple power sources/subpanels (if applicable).</li>
+                </ul>
+            </div>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="step">
+            <h2>Step 2: Photovoltaic (PV) System Integration</h2>
+            <div class="step-section">
+                <h3>Purpose</h3>
+                <p>Integrate mandatory solar PV systems to offset home energy use, ensuring safe interconnection with the grid, rapid shutdown for firefighter safety, and proper labeling. This supports California's clean energy goals (Title 24 Part 6) while complying with electrical safety standards.</p>
+            </div>
+            <div class="step-section">
+                <h3>Key Activities</h3>
+                <ul>
+                    <li>Determine PV system size and location (e.g., roof/ground-mount) based on energy modeling.</li>
+                    <li>Develop a one-line diagram showing interconnection (load-side or supply-side); evaluate panel capacity impacts (e.g., if busbar limits exceeded, consider subpanel).</li>
+                    <li>Apply the <span class="tooltip" data-tooltip="Sum of main breaker + PV breaker ≤ 120% of busbar rating (e.g., 40A PV max on 200A bus with 200A main).">120% busbar rule</span> for load-side connections and size breakers/inverters.</li>
+                    <li>Install disconnects (AC/DC) and <span class="tooltip" data-tooltip="Reduces PV voltages within 30 seconds for firefighter safety (e.g., module-level electronics).">rapid shutdown</span> systems.</li>
+                    <li>Ensure equipment grounding, bonding, and all required labels/placards.</li>
+                    <li>Coordinate utility notification and PTO (Permission to Operate).</li>
+                </ul>
+            </div>
+            <div class="step-section">
+                <h3>Related Codes and References</h3>
+                <ul>
+                    <li><span class="tooltip" data-tooltip="Requires PV to offset annual electricity usage (e.g., 2-3 kW typical).">Title 24 Part 6</span> (mandatory PV sizing for new homes).</li>
+                    <li><span class="tooltip" data-tooltip="Governs interconnected sources; 120% rule limits backfeed to prevent overload.">CEC 705.12</span> (interconnection: 120% rule for busbar; load-side vs. supply-side; may require subpanel if capacity exceeded).</li>
+                    <li><span class="tooltip" data-tooltip="For connections ahead of main disconnect; needs utility approval.">CEC 705.11</span> (supply-side connections: dedicated disconnect, OCPD).</li>
+                    <li><span class="tooltip" data-tooltip="Requires accessible disconnects for PV conductors.">CEC 690.13, 690.15(A)</span> (disconnecting means: visible-blade AC disconnect; DC disconnect if needed).</li>
+                    <li><span class="tooltip" data-tooltip="Mandatory for building-mounted PV; de-energizes conductors quickly.">CEC 690.12</span> (rapid shutdown: de-energize in 30 seconds; module-level or array-level; placard per 690.56(C)).</li>
+                    <li><span class="tooltip" data-tooltip="OCPD sized at 125% of inverter output current.">CEC 705.12(B)(2)</span> (inverter/OCPD sizing: 125% of continuous output).</li>
+                    <li><span class="tooltip" data-tooltip="Covers PV grounding; most systems are ungrounded with warnings.">CEC 690</span> (grounding/bonding: UL 2703 for clips; labels for ungrounded systems per 690.35(F)).</li>
+                    <li><span class="tooltip" data-tooltip="Requires specific labels for output, warnings, and rapid shutdown.">CEC 690.53, 690.54, 705.10</span> (labels: e.g., "PHOTOVOLTAIC SYSTEM EQUIPPED WITH RAPID SHUTDOWN"; backfeed breaker warnings).</li>
+                    <li><span class="tooltip" data-tooltip="Markings for PV conduits every 10 ft.">CEC 690.31(D)</span> (conduit labels: "CAUTION: SOLAR PV CIRCUIT").</li>
+                    <li>Utility rules (e.g., Rule 21, CPAU requirements for disconnect within 10 ft of meter).</li>
+                    <li>Rationale: Firefighter safety via rapid shutdown; bus capacity limits prevent overloads.</li>
+                    <li>Checklists: Bus capacity calculation; label locations on plans.</li>
+                </ul>
+            </div>
+            <div class="step-section">
+                <h3>Outputs/Deliverables</h3>
+                <ul>
+                    <li>One-line diagram with PV details (capacity, inverter specs, OCPD size).</li>
+                    <li>Rapid shutdown method and placard notes.</li>
+                    <li>Interconnection application for utility.</li>
+                    <li>Structural calcs for array mounting (per CRC R324).</li>
+                </ul>
+            </div>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="step">
+            <h2>Step 3: Electric Vehicle (EV) Charging Infrastructure</h2>
+            <div class="step-section">
+                <h3>Purpose</h3>
+                <p>Provide EV-ready infrastructure to support electrification goals, ensuring safe, dedicated circuits for Level 2 charging. This future-proofs the home for EV adoption, mitigates shock risks, and integrates with overall load management.</p>
+            </div>
+            <div class="step-section">
+                <h3>Key Activities</h3>
+                <ul>
+                    <li>Install a dedicated 208/240V branch circuit (min. 40A) with conduit and outlet in the garage/parking area.</li>
+                    <li>Size the circuit for continuous load (e.g., 50A for flexibility) and add <span class="tooltip" data-tooltip="Ground-fault circuit interrupter; protects against shocks in wet areas like garages.">GFCI</span> protection.</li>
+                    <li>Verify panel capacity and update load calculations; add subpanel if multiple EVs or high loads exceed main panel limits.</li>
+                    <li>Consider local amendments for multiple spaces or higher amps.</li>
+                    <li>Integrate with other systems (e.g., not on ESS backup if battery-limited).</li>
+                </ul>
+            </div>
+            <div class="step-section">
+                <h3>Related Codes and References</h3>
+                <ul>
+                    <li><span class="tooltip" data-tooltip="Mandates EV-ready spaces with at least 40A infrastructure for new homes.">CalGreen (Title 24 Part 11) Section 4.106.4</span> (EV-ready: min. one space with 40A circuit/raceway).</li>
+                    <li><span class="tooltip" data-tooltip="Covers EV equipment; treats charging as continuous load.">CEC Article 625</span> (EV supply equipment: continuous load at 125%; 625.43 for disconnect if &gt;60A/150V).</li>
+                    <li><span class="tooltip" data-tooltip="Requires dedicated circuits; GFCI for garage/outdoor up to 50A.">CEC 210.11(C)</span> (dedicated circuit); CEC 210.8(A)(2)/(3) (GFCI for garage/outdoor receptacles up to 50A).</li>
+                    <li><span class="tooltip" data-tooltip="EV loads at 125%; demand management to avoid oversizing.">CEC 220</span> (load calc: EV at 125% continuous; 220.87 for demand management; may require subpanel for multiple EVs).</li>
+                    <li><span class="tooltip" data-tooltip="Allows listed systems to share power between chargers.">CEC 625.54</span> (EV energy management systems for multiple chargers).</li>
+                    <li><span class="tooltip" data-tooltip="Required only for gassing batteries, not typical EVs.">CEC 625.52</span> (ventilation only if required by EVSE/battery type).</li>
+                    <li>Local amendments (e.g., San Jose for 50A receptacle; CalGreen Tier 1 for 2+ spaces).</li>
+                    <li>Rationale: Shock mitigation in garages; aligns with EV adoption mandates.</li>
+                </ul>
+            </div>
+            <div class="step-section">
+                <h3>Outputs/Deliverables</h3>
+                <ul>
+                    <li>Electrical plan showing EV circuit (wire size, breaker, outlet location like NEMA 14-50).</li>
+                    <li>Updated load calc including EV demand.</li>
+                    <li>Notes on GFCI breaker and future-proofing.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="step">
+            <h2>Step 4: Room-by-Room Branch Circuits &amp; Protection</h2>
+            <div class="step-section">
+                <h3>Purpose</h3>
+                <p>Design branch circuits for safety and convenience, incorporating expanded GFCI/AFCI for shock and arc-fault protection. This ensures adequate power distribution, prevents overloads, and complies with room-specific requirements.</p>
+            </div>
+            <div class="step-section">
+                <h3>Key Activities</h3>
+                <ul>
+                    <li>Assign dedicated circuits (e.g., kitchen, bathroom, laundry, garage) with appropriate sizing and protection.</li>
+                    <li>Apply <span class="tooltip" data-tooltip="Ground-fault protection; required in wet areas to prevent shocks.">GFCI</span>/<span class="tooltip" data-tooltip="Arc-fault protection; prevents fires from arcing in habitable spaces.">AFCI</span> based on area (e.g., AFCI in habitable rooms, GFCI in wet areas).</li>
+                    <li>Balance loads, add lighting controls, and include smoke/CO detectors.</li>
+                    <li>Create a panel directory and verify receptacle spacing/lighting outlets.</li>
+                </ul>
+            </div>
+            <div class="step-section">
+                <h3>Related Codes and References</h3>
+                <ul>
+                    <li><span class="tooltip" data-tooltip="Rules for branch circuits, including dedicated 20A for kitchens, etc.">CEC Article 210</span> (branch circuits: e.g., 210.11(C) for dedicated 20A circuits; 210.52 for spacing).</li>
+                    <li><span class="tooltip" data-tooltip="Expanded GFCI for kitchens, bathrooms, garages, etc.">CEC 210.8(A)</span> (GFCI: kitchens, bathrooms, laundry, garages, outdoors; expanded in NEC 2020).</li>
+                    <li><span class="tooltip" data-tooltip="AFCI required in most habitable areas; exemptions for bathrooms/garages.">CEC 210.12(A)</span> (AFCI: habitable rooms like bedrooms, kitchens, laundry; exemptions for bathrooms/garages).</li>
+                    <li><span class="tooltip" data-tooltip="Requires lighting in hallways, garages, etc.">CEC 210.70</span> (lighting outlets); CEC 404.2(C) (neutral in switch boxes).</li>
+                    <li><span class="tooltip" data-tooltip="Energy code for efficient lighting and controls (e.g., sensors).">Title 24 Part 6</span> (high-efficacy lighting, sensors in bathrooms/garages).</li>
+                    <li><span class="tooltip" data-tooltip="Smoke/CO alarms must be on AFCI circuits in bedrooms/halls.">CRC R314/R315</span> (smoke/CO alarms on AFCI circuits).</li>
+                    <li><span class="tooltip" data-tooltip="Requires neat panel schedules for maintenance.">CEC 408.4(A)</span> (panel directories); CEC 210.4(B) (multi-wire circuits).</li>
+                    <li>Rationale: Prevents shocks/arcs; ensures convenience (e.g., no tripped circuits from appliances).</li>
+                    <li>Table from document: Summarizes requirements by area (e.g., kitchen: 2x20A, GFCI yes, AFCI yes).</li>
+                </ul>
+            </div>
+            <div class="step-section">
+                <h3>Outputs/Deliverables</h3>
+                <ul>
+                    <li>Room-by-room circuit schedule/diagram.</li>
+                    <li>Panel directory with labels (e.g., "Kitchen SA #1").</li>
+                    <li>Notes on AFCI/GFCI breakers and lighting controls.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="step">
+            <h2>Step 5: Energy Storage System (ESS) Integration (Battery Backup)</h2>
+            <div class="step-section">
+                <h3>Purpose</h3>
+                <p>Safely incorporate battery storage for resiliency and energy management, addressing fire safety, location limits, and electrical integration. This is optional but aligns with solar mandates for backup power.</p>
+            </div>
+            <div class="step-section">
+                <h3>Key Activities</h3>
+                <ul>
+                    <li>Select listed ESS and verify location (e.g., garage/outdoor, with spacing/clearances).</li>
+                    <li>Integrate into one-line diagram with disconnects and grounding; consider critical loads subpanel if needed for backup.</li>
+                    <li>Add fire safety measures (e.g., heat detectors) and utility coordination.</li>
+                    <li>Ensure capacity limits and ventilation (if needed for non-Li-ion).</li>
+                </ul>
+            </div>
+            <div class="step-section">
+                <h3>Related Codes and References</h3>
+                <ul>
+                    <li><span class="tooltip" data-tooltip="Limits ESS locations to garages/outdoors; max 40 kWh aggregate in garages.">CRC R327</span> (location: garages/outdoors only; spacing ≥3 ft unless UL 9540A tested; capacity ≤40 kWh aggregate in garages).</li>
+                    <li><span class="tooltip" data-tooltip="Standards for safe ESS listing and inverters.">UL 9540/1973/1741</span> (listing for systems/inverters).</li>
+                    <li><span class="tooltip" data-tooltip="Interconnection rules; may need subpanels for backup loads.">CEC 705/706</span> (interconnection: disconnects per 706.7(A); plaques per 706.11(A); may require subpanel for critical loads).</li>
+                    <li><span class="tooltip" data-tooltip="Follow manufacturer instructions for installation.">CEC 110.3(B)</span> (install per manufacturer instructions).</li>
+                    <li><span class="tooltip" data-tooltip="Fire code for ESS; requires detectors and protections.">CFC 1206</span> (fire safety: heat detectors, 3 ft from openings; bollards for impact protection).</li>
+                    <li><span class="tooltip" data-tooltip="Alarms in ESS areas; ventilation for gassing types.">CRC R327.7</span> (smoke/heat alarms); CRC R327.6 (ventilation for gassing batteries).</li>
+                    <li>Rationale: Fire safety for batteries; anti-islanding during outages.</li>
+                    <li>Checklists: Product cut-sheet; capacity notes on plans.</li>
+                </ul>
+            </div>
+            <div class="step-section">
+                <h3>Outputs/Deliverables</h3>
+                <ul>
+                    <li>Updated one-line diagram with ESS details (e.g., breaker, disconnect).</li>
+                    <li>Location/spacing notes and fire safety measures (e.g., heat detector).</li>
+                    <li>Utility interconnection addendum.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="step">
+            <h2>Step 6: Final Documentation, Permitting, and Inspection</h2>
+            <div class="step-section">
+                <h3>Purpose</h3>
+                <p>Compile all elements for permit submission and inspection, ensuring code compliance and future-readiness. This wraps up the workflow with checklists and resources for smooth approval.</p>
+            </div>
+            <div class="step-section">
+                <h3>Key Activities</h3>
+                <ul>
+                    <li>Prepare one-line diagrams, load calcs, spec sheets, and checklists.</li>
+                    <li>Address emerging updates (e.g., NEC 2023 for grounding) and local reach codes.</li>
+                    <li>Cross-reference best practices and sources.</li>
+                </ul>
+            </div>
+            <div class="step-section">
+                <h3>Related Codes and References</h3>
+                <ul>
+                    <li>All prior CEC/NEC/CalGreen/CRC citations.</li>
+                    <li>Appendix checklists (e.g., room-by-room compliance; inspection guides like LADBS Solar PV Plan).</li>
+                    <li>Sources: California Solar Permitting Guidebook; City of Palo Alto/Menlo Park guidelines; NFPA 855.</li>
+                    <li>Rationale: Speeds permitting; ensures safe, resilient design.</li>
+                </ul>
+            </div>
+            <div class="step-section">
+                <h3>Outputs/Deliverables</h3>
+                <ul>
+                    <li>Complete permit package (diagrams, worksheets, forms).</li>
+                    <li>Field checklists for inspection (e.g., signage, rapid shutdown verification).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
